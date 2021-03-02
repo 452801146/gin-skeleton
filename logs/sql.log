@@ -1,0 +1,6 @@
+
+2021/03/02 12:12:21 D:/dev/go1.15/gopath/pkg/mod/gorm.io/driver/mysql@v1.0.4/mysql.go:54
+[info] replacing callback `gorm:update` from D:/dev/go1.15/gopath/pkg/mod/gorm.io/driver/mysql@v1.0.4/mysql.go:54
+
+2021/03/02 12:12:23 D:/goProject/gin_skeleton/initialize/init_orm.go:24
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.

@@ -1,0 +1,39 @@
+[mysql]
+dbHost="192.168.1.121"                                  #数据库连接host
+dbPort="3306"                                       #数据端口
+dbName="test"                                    #数据库名称
+dbUser="test"                                    #数据库用户名
+dbPass="123456"                                 #数据库密码
+maxOpenConns = 50                                   #最大打开连接数
+maxIdleConns = 50                                   #最大维持连接数
+connMaxLifetime = 10                                #连接维持时间
+
+[gorm]
+logLevel=4                                          #日志记录等级 Silent LogLevel:1 Error:2 Warn:3 Info:4
+
+[redis]
+addr="192.168.1.121:6379"
+password=""
+
+
+[server]
+addr=":10080"
+ginModel="debug"                                    #debug|release [调试模式|线上模式]
+# 日志文件路径
+ginLog="gin.log"                                    #日志文件./log/ginlog
+serverLog="server.log"                              #日志文件./log/serverlog
+sqlLog="sql.log"                                    #日志文件./log/sqllog
+
+[api]
+secretKey="CHgowStnnpCcAvhT8ZdURxkGf1swS2p92QmD"    #用于api签名
+
+[jwt]
+secret="eM1lmcxf9Ve5Yra74DHc4yrCDW2OtTMA"           #用于jwt签名
+expiresAt=24                                        #过期时间单位小时
+
+
+
+[wx]
+appid="wxbd9610236e69ff83"
+appsecret="795fae6a8fd291cf1c8e3445630e4158"
+
