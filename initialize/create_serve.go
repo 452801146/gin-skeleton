@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func InitServe()  {
+func InitServe() {
 
 	// 基础初始化
 	InitLogDir()
@@ -14,9 +14,9 @@ func InitServe()  {
 	// 初始化日志
 	InitLogger()
 	// 初始化orm
-	InitGorm()
+	//InitGorm()
 	// 初始化redis
-	InitRedis()
+	//InitRedis()
 	// 初始化定时器
 	InitTask()
 	// gin初始化配置
