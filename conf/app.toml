@@ -33,7 +33,5 @@ expiresAt=24                                        #过期时间单位小时
 
 
 
-[wx]
-appid="wxbd9610236e69ff83"
-appsecret="795fae6a8fd291cf1c8e3445630e4158"
+
 
