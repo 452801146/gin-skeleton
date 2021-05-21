@@ -1,9 +1,9 @@
 [mysql]
-dbHost="192.168.1.121"                                  #数据库连接host
+dbHost="192.168.1.121"                              #数据库连接host
 dbPort="3306"                                       #数据端口
-dbName="test"                                    #数据库名称
-dbUser="test"                                    #数据库用户名
-dbPass="123456"                                 #数据库密码
+dbName="test"                                       #数据库名称
+dbUser="test"                                       #数据库用户名
+dbPass="123456"                                     #数据库密码
 maxOpenConns = 50                                   #最大打开连接数
 maxIdleConns = 50                                   #最大维持连接数
 connMaxLifetime = 10                                #连接维持时间
@@ -12,7 +12,7 @@ connMaxLifetime = 10                                #连接维持时间
 logLevel=4                                          #日志记录等级 Silent LogLevel:1 Error:2 Warn:3 Info:4
 
 [redis]
-addr="192.168.1.121:6379"
+addr="127.0.0.1:6379"
 password=""
 
 

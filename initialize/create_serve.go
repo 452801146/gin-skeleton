@@ -16,7 +16,7 @@ func InitServe() {
 	// 初始化orm
 	//InitGorm()
 	// 初始化redis
-	//InitRedis()
+	InitRedis()
 	// 初始化定时器
 	InitTask()
 	// gin初始化配置
