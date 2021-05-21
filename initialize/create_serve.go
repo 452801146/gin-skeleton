@@ -21,6 +21,8 @@ func InitServe() {
 	InitTask()
 	// gin初始化配置
 	InitGin()
+	// ws初始化
+	//InitWs()
 
 }
 

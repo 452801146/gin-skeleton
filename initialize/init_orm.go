@@ -18,12 +18,14 @@ func InitGorm() {
 	dbUser := g.Config.GetString("mysql.dbUser")
 	dbPass := g.Config.GetString("mysql.dbPass")
 
-	newLogger := initGormLogger()
+	// 自定义日志存储用该配置替换
+	// newLogger := initGormLogger()
 
+	logModel := g.Config.GetInt("gorm.logLevel")
 	dsn := fmt.Sprintf(`%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True`, dbUser, dbPass, dbHost, dbPort, dbName)
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
-		SkipDefaultTransaction: true,      //禁用事务
-		Logger:                 newLogger, //新日志
+		SkipDefaultTransaction: true,                                              //禁用事务
+		Logger:                 logger.Default.LogMode(logger.LogLevel(logModel)), //新日志
 	})
 	if err != nil {
 		panic(err)
